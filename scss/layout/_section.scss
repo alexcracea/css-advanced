@@ -1,0 +1,22 @@
+.banner {
+  color: $black;
+
+  &__content {
+    border-bottom: 1px solid $black;
+
+    &-title {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+// .banner {
+//   color: #000;
+// }
+// .banner__content {
+//   border-bottom: 1px solid #000;
+// }
+// .banner__content-title {
+//   margin-top: 30px;
+// }
