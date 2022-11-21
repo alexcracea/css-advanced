@@ -1,0 +1,25 @@
+@import 'base/colors';
+
+$header-height: 95px;
+$sidebar-width: 232px;
+
+.header {
+  height: $header-height;
+  background-color: green;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - $header-height);
+}
+
+.sidebar-area {
+  width: $sidebar-width;
+  background-color: pink;
+}
+
+.content-area {
+  width: calc(100% - $sidebar-width);
+  background-color: aliceblue;
+  overflow-y: auto;
+}
