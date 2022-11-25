@@ -1,0 +1,12 @@
+.gradient-box {
+  height: 300px;
+  background-color: green;
+}
+
+.gradient-box--1 {
+  background: linear-gradient(to left, #e66465 50%, #9198e5 50%);
+}
+
+.gradient-box--2 {
+  background: radial-gradient(circle, rgba(124,15,110,1) 0%, rgba(175,128,58,0.32396708683473385) 28%, rgba(212,211,20,1) 31%, rgba(13,89,226,1) 55%, rgba(58,236,8,1) 71%, rgba(232,255,0,1) 100%);
+}

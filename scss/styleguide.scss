@@ -2,7 +2,6 @@
 
 $header-height: 95px;
 $sidebar-width: 232px;
-
 .header {
   height: $header-height;
   background-color: green;
@@ -16,6 +15,7 @@ $sidebar-width: 232px;
 .sidebar-area {
   width: $sidebar-width;
   background-color: pink;
+
 }
 
 .content-area {
