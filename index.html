@@ -13,12 +13,37 @@
   <main class="main">
     <aside class="sidebar-area">
       <ul>
-        <li><a href="#background-box-1">Background box 1</a></li>
-        <li><a href="#background-box-2">Background box 2</a></li>
-        <li><a href="#background-box-3">Background box 3</a></li>
+        <li><a href="#ratio-box">Ratio Box</a></li>
+        <li><a href="#filters">Filters</a></li>
+        <li><a href="#gradient">Gradient</a></li>
       </ul>
     </aside>
     <content class="content-area">
+      <div class="section" id="ratio-box">
+        <h2 class="section__title">Ratio Box</h2>
+        <div class="section__content">
+          <img srcset="http://unsplash.it/100/100 1x, http://unsplash.it/200/200 2x" src="http://unsplash.it/200/200"  alt="">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="ratio-box">
+                  <img src="images//filter.jpg"/>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="ratio-box ratio-box--4-3">
+                  <img src="images//filter.jpg"/>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="ratio-box ratio-box--16-9">
+                  <img src="images//filter.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section" id="filters">
         <h2 class="section__title">Filters</h2>
         <div class="section__content">

@@ -1,0 +1,8 @@
+@mixin fix-inline-blocks($fontsize: 16px) {
+  font-size: 0;
+
+  > * {
+    display: inline-block;
+    font-size: $fontsize;
+  }
+}
