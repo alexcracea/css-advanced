@@ -1,0 +1,61 @@
+/*
+transform: scale(0.5) - scaleaza (schimba dimensiunea) boxei in dependenta de coeficient pe ambele axe pe
+transform: scaleX() - scaleaza (schimba dimensiunea) boxei in dependenta de coeficient pe axa X
+transform: scaleY() - scaleaza (schimba dimensiunea) boxei in dependenta de coeficient pe axa Y
+transform: scaleZ() - scaleaza (schimba dimensiunea) boxei in dependenta de coeficient pe axa Z
+transform: scale3d(X, Y, Z)
+
+transform: skew(45deg) - distortioneaza boxa in dependenta de inclinare pe ambele axe pe
+transform: skewX() - distortioneaza boxa in dependenta de inclinare pe axa X
+transform: skewY() - distortioneaza boxa in dependenta de inclinare pe axa Y
+transform: skewZ() - distortioneaza boxa in dependenta de inclinare pe axa Z
+transform: skew3d(X, Y, Z)
+
+transform: translate(50%) - muta (schimba pozitionarea) boxei pe ambele axe pe
+transform: translateX() - muta (schimba pozitionarea) boxei pe axa X
+transform: translateY() - muta (schimba pozitionarea) boxei pe axa Y
+transform: translateZ() - muta (schimba pozitionarea) boxei pe axa Z
+transform: translate3d(X, Y, Z)
+
+transform: rotate(50%) - rotateste boxei pe axa Z
+transform: rotateX() - rotateste boxei pe axa X
+transform: rotateY() - rotateste boxei pe axa Y
+transform: rotateZ() - rotateste boxei pe axa Y
+transform: rotate3d(X, Y, Z, axa)
+
+transform-style: flat || preserve-3d - determina daca browserul intr-adevar sa arate elementel in 3d (preserve-3d) sau nu (flat)
+
+transform-origin: top center - determina de unde incepe tranformarea (exemplu: batutul unui cuie in pictura din perete)
+
+backface-visibility: visible || hidden - determina daca partea din spate a unui 3d obiect se stravede sau nu
+
+perspective: 500px - determina distanta de la punctul axei z=0 pana la ecranul utilizatorului. Ofera perspectiva unui 3d scene
+
+perspective-origin: top left - determina de unde incepem numaratoarea distantei perspective fata de obiect
+*/
+
+.transform-action-area--1 {
+  &:hover {
+    .transform-element {
+      transform: scale(0.5, 1.2, 3);
+    }
+  }
+}
+
+.transform-action-area--2 {
+  &:hover {
+    .transform-element {
+      transform: rotate(50deg);
+    }
+  }
+}
+// .transform-action-area:hover .transform-element {}
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
