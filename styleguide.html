@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="section" id="forms">
+    <h2 class="section__title">Forms</h2>
+    <div class="section__content">
+      <form>
+        <h3>Pure CSS Dropdowns</h3>
+        <input id="dropdown-example" type="checkbox" class="visually-hidden dropdown-input" name="dropdown-checkbox">
+        <label class="dropdown-button" for="dropdown-example">Toggle dropdown</label>
+        <div class="dropdown-content">
+          <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+          </ul>
+        </div>
+        
+        <h3>Cards</h3>
+        <div class="cards">
+          <input checked type="radio" class="visually-hidden cards__input cards__input--1" id="cards-item-1" name="cards-radio" value="1">
+          <input type="radio" class="visually-hidden cards__input cards__input--2" id="cards-item-2" name="cards-radio" value="2">
+          <input type="radio" class="visually-hidden cards__input cards__input--3" id="cards-item-3" name="cards-radio" value="3">
+          <input type="radio" class="visually-hidden cards__input cards__input--4" id="cards-item-4" name="cards-radio" value="4">
+          <label for="cards-item-1" class="cards__button cards__button--1">Card one</label>
+          <label for="cards-item-2" class="cards__button cards__button--2">Card two</label>
+          <label for="cards-item-3" class="cards__button cards__button--3">Card three</label>
+          <label for="cards-item-4" class="cards__button cards__button--4">Card four</label>
+        </div>
+
+        <h3>Custom Checkbox</h3>
+        <label class="checkbox" for="custom-checkbox">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="custom-checkbox" id="custom-checkbox">
+          <div class="checkbox__box">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M3.556 14.222l-3.556 3.556 10.667 10.667 21.333-21.333-3.556-3.556-17.778 17.778-7.111-7.111z"></path>
+            </svg>
+          </div>
+          <span class="checkbox__label">
+            Checkbox with Custom Style
+          </span>
+        </label>
+        <h3>Simple Select</h3>
+        <div class="simple-select">
+          <select name="simple-select" id="simple-select">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <svg class="simple-select__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+            <path d="M12.939 23.842l-12.146-12.146c-0.586-0.586-0.586-1.536 0-2.121l1.417-1.417c0.585-0.585 1.533-0.586 2.119-0.002l9.672 9.626 9.672-9.626c0.586-0.583 1.534-0.582 2.119 0.002l1.417 1.417c0.586 0.586 0.586 1.536 0 2.121l-12.146 12.146c-0.586 0.586-1.536 0.586-2.121 0z"></path>
+          </svg>
+        </div>
+        <h3>Advanced Select</h3>
+        <select class="advanced-select" name="advanced-select" id="advanced-select">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <h3>Bootstrap form</h3>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="section" id="animations">
+    <h2 class="section__title">Animations</h2>
+    <div class="section__content">
+      <div class="animation-area">
+        <div class="animation-child"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="transitions">
+    <h2 class="section__title">Transitions</h2>
+    <div class="section__content">
+      <div class="transition-area">
+        <div class="transition-child transition-child--1"></div>
+        <div class="transition-child transition-child--2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="transform">
+    <h2 class="section__title">Transform</h2>
+    <div class="section__content">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 transform-action-area transform-action-area--1">
+            <div class="transform-element">
+              Transform: scale()
+            </div>
+          </div>
+          <div class="col-4 transform-action-area transform-action-area--2">
+            <div class="transform-element">
+              Transform rotate()
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="ratio-box">
+    <h2 class="section__title">Ratio Box</h2>
+    <div class="section__content">
+      <img srcset="http://unsplash.it/100/100 1x, http://unsplash.it/200/200 2x" src="http://unsplash.it/200/200"  alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="ratio-box">
+              <img src="images/filter.jpg"/>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="ratio-box ratio-box--4-3">
+              <img src="images/filter.jpg"/>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="ratio-box ratio-box--16-9">
+              <img src="images/filter.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="filters">
+    <h2 class="section__title">Filters</h2>
+    <div class="section__content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="filter-box filter-box--grayscale">
+              <img src="images/filter.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="filter-box filter-box--blur">
+              <img src="images/filter.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="filter-box filter-box--hue-rotate">
+              <img src="images/filter.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="filter-box filter-box--drop-shadow">
+              <img src="images/filter.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="filter-box filter-box--grayscale">
+              <img src="images/filter.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="gradient">
+    <h2 class="section__title">Gradient</h2>
+    <div class="section__content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4"><div class="gradient-box gradient-box--1"></div></div>
+          <div class="col-lg-4"><div class="gradient-box gradient-box--2"></div></div>
+          <div class="col-lg-4"><div class="gradient-box gradient-box--3"></div></div>
+          <div class="col-lg-4"><div class="gradient-box gradient-box--4"></div></div>
+          <div class="col-lg-4"><div class="gradient-box gradient-box--5"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
