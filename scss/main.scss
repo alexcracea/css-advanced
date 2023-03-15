@@ -1,0 +1,18 @@
+// codul pentru componentele din styleguide: background-box, filters, people-layout...
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'components/backround-box';
+@import 'components/fonts';
+
+.background-box {
+  @include fix-inline-blocks(10px);
+}
+
+.header {
+  @include fix-inline-blocks(20px);
+}
+
+aside {
+  @include fix-inline-blocks();
+}

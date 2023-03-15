@@ -1,0 +1,10 @@
+.main-content {
+  display: flex;
+  height: calc(100vh   - $header-height);
+}
+
+.content-area {
+  background-color: green;
+  flex-grow: 1;
+  overflow-y: auto;
+}
