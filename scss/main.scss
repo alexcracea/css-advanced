@@ -1,27 +1,7 @@
 // codul pentru componentele din styleguide: background-box, filters, people-layout...
 @import 'base/reset';
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import 'base/variables';
 @import 'base/mixins';
-@import 'components/backround-box';
-@import 'components/basic-box';
-@import 'components/people-layout';
-pune ceva aici
-.background-box {
-  @include fix-inline-blocks(10px);
-}
-
-.header {
-  @include fix-inline-blocks(20px);
-}
-
-aside {
-  @include fix-inline-blocks();
-}
-
-footer {
-  @include fix-inline-blocks(30px);
-}
-
-section {
-  @include fix-inline-blocks(50px);
-}
+@import 'components/filters';
+@import 'components/gradients';

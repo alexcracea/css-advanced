@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css"> -->
   <link rel="stylesheet" href="css/styleguide.css">
 </head>
 <body>
@@ -16,38 +17,70 @@
     <aside class="sidebar">
       aside
       <ul>
-        <li><a href="#background-box">Background Box</a></li>
-        <li><a href="#people-layout">People Layout</a></li>
         <li><a href="#filters">Filters</a></li>
+        <li><a href="#gradients">Gradients</a></li>
       </ul>
     </aside>
     <content class="content-area">
-      <div class="section" id="background-box">
-        <h2 class="section__title">Background Box</h2>
+      <div class="section" id="gradients">
+        <div class="container">
+          <h2 class="section__content">Gradients</h2>
+        </div>
         <div class="section__content">
-          <div class="background-box"></div>
-          // codul la tema despre background-box
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="gradient-box gradient-box--1"></div>
+              </div>
+              <div class="col-3">
+                <div class="gradient-box gradient-box--2"></div>
+              </div>
+              <div class="col-3">
+                <div class="gradient-box gradient-box--3"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="section" id="background-box">
-        <h2 class="section__title">Background Box</h2>
-        <div class="section__content">
-          <div class="background-box"></div>
-          // codul la tema despre background-box
+      <div class="section" id="filters">
+        <div class="container">
+          <h2 class="section__content">Filters</h2>
         </div>
-      </div>
-      <div class="section" id="background-box">
-        <h2 class="section__title">Background Box</h2>
         <div class="section__content">
-          <div class="background-box"></div>
-          // codul la tema despre background-box
-        </div>
-      </div>
-      <div class="section" id="background-box">
-        <h2 class="section__title">Background Box</h2>
-        <div class="section__content">
-          <div class="background-box"></div>
-          // codul la tema despre background-box
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="filter-box filter-box--blur">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="filter-box filter-box--grayscale">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="filter-box filter-box--brightness">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="filter-box filter-box--contrast">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="filter-box filter-box--hue-rotate">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="filter-box filter-box--drop-shadow">
+                  <img src="images/filter.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </content>

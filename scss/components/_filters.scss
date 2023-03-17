@@ -1,0 +1,51 @@
+.filter-box--blur {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--grayscale {
+  &:hover {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}
+
+.filter-box--brightness {
+  &:hover {
+    img {
+      filter: brightness(0.4);
+    }
+  }
+}
+
+.filter-box--contrast {
+  &:hover {
+    img {
+      filter: contrast(200%);
+    }
+  }
+}
+
+.filter-box--hue-rotate {
+  &:hover {
+    img {
+      filter: hue-rotate(90deg);
+    }
+  }   
+}
+
+.filter-box--drop-shadow {
+  &:hover {
+    img {
+      filter: drop-shadow(7px 7px 2px red);
+    }
+  }
+}
+
+
+// "&" in selector inseamna "totul ceea ce-i mai sus"
+  
