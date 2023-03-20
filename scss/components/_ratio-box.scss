@@ -1,0 +1,39 @@
+.ratio-box,
+.ratio-box--16-9,
+.ratio-box--4-3 {
+  position: relative;
+
+  &::before {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.ratio-box--16-9 {
+  &::before {
+    padding-bottom: 56.25%;
+  }
+}
+
+.ratio-box--4-3 {
+  &::before {
+    padding-bottom: 75%;
+  }
+}
+
+
+@include breakpoint((-webkit-min-device-pixel-ratio: 2) (min-resolution: 192dpi)) {
+  body {
+    background-color: green;
+  }
+}

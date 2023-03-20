@@ -6,22 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css"> -->
   <link rel="stylesheet" href="css/styleguide.css">
 </head>
 <body>
   <header class="header">
-    header
   </header>
   <main class="main-content">
     <aside class="sidebar">
-      aside
       <ul>
         <li><a href="#filters">Filters</a></li>
         <li><a href="#gradients">Gradients</a></li>
+        <li><a href="#responsive-image">Responsive Image</a></li>
       </ul>
     </aside>
     <content class="content-area">
+      <div class="section" id="responsive-image">
+        <div class="container">
+          <h2 class="section__content">Responsive Image</h2>
+        </div>
+        <div class="section__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="ratio-box">
+                  <img
+                    src="http://unsplash.it/1200/1200"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section" id="gradients">
         <div class="container">
           <h2 class="section__content">Gradients</h2>
@@ -30,7 +47,7 @@
           <div class="container">
             <div class="row">
               <div class="col-3">
-                <div class="gradient-box gradient-box--1"></div>
+                <div class="gradient-box gradient-box--1 ratio-box--16-9"></div>
               </div>
               <div class="col-3">
                 <div class="gradient-box gradient-box--2"></div>
@@ -55,9 +72,9 @@
                 </div>
               </div>
               <div class="col-4">
-                <div class="filter-box filter-box--grayscale">
-                  <img src="images/filter.jpg" alt="">
-                </div>
+              <div class="filter-box ratio-box--16-9 filter-box--grayscale">
+                <img src="images/filter.jpg" alt="">
+              </div>
               </div>
               <div class="col-4">
                 <div class="filter-box filter-box--brightness">
