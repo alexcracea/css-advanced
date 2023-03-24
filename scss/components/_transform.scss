@@ -1,0 +1,63 @@
+.transform-action-area--1 {
+  &:hover {
+    .transform-element {
+      transform: scaleY(0.5);
+    }
+  }
+}
+
+.transform-action-area--2 {
+  &:hover {
+    .transform-element {
+      transform: skew(45deg);
+      background-color: green;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+
+  transform: scale(0.5) - scaleaza (schimba dimensiunea boxei) in dependenta de coeficient
+  transform: scaleX(0.5) - scaleaza (schimba dimensiunea boxei) in dependenta de coeficient, pe axa X
+  transform: scaleY(0.5) - scaleaza (schimba dimensiunea boxei) in dependenta de coeficient, pe axa Y
+  transform: scaleZ(0.5) - scaleaza (schimba dimensiunea boxei) in dependenta de coeficient, pe axa Z
+
+  transform: translate(30px, 30px) - muta (schimba pozitionarea) boxei pe ambele axe
+  transform: translate3d(30px, 30px, 30px) - muta (schimba pozitionarea) boxei pe toate 3 axe
+  transform: translateX(50%) - muta (schimba pozitionarea) boxei pe axa X
+  transform: translateY(50%) - muta (schimba pozitionarea) boxei pe axa Y
+  transform: translateZ(50%) - muta (schimba pozitionarea) boxei pe axa Z
+
+  transform: rotate(90deg) - roteste boxa cu X grade pe axa Z
+  transform: rotateX(90deg) - roteste boxa cu X grade pe axa X
+  transform: rotateY(90deg) - roteste boxa cu X grade pe axa Y
+  transform: rotateZ(90deg) - roteste boxa cu X grade pe axa Z
+
+  transform: skew(90deg, -90deg) - distortioneaza boxa cu X grade inclinare pe ambele axe
+  transform: skewX(90deg) - distortioneaza boxa cu X grade inclinare pe axa X
+  transform: skewY(90deg) - distortioneaza boxa cu X grade inclinare pe axa Y
+  transform: skewZ(90deg) - distortioneaza boxa cu X grade inclinare pe axa Z
+
+  transform: perspective(30px) - seteaza distanta pana la ecranul utilizatorului pentru a crea perpectiva 3d
+  /
+  perspective: 500px - determina distanta de la punctul axe z = 0 pana la ecranul tau. Ofera "perpectiva" unei scene 3d
+
+  perspective-origin: top left - determina de unde incepem numaratoarea distantei perspective fata de obiect
+
+  transform-style: flat sau preserve-3d - permite sau nu vizualizarea in 3d
+
+  perpective-origin: top left - determina de unde incepem transformarea (exemplu: batutul in cuie a punctului central in jurul careia facem rotate)
+
+  backface-visibility: hidden sau visible - determina daca partea din spate a unui 3d obiect se stravede sau nu
+
+*/ 
