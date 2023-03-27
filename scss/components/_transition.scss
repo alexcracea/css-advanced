@@ -27,6 +27,24 @@
   transition: left 2s linear 0s, background-color 2s linear 2s, opacity 2s linear 4s;
 }
 
+.transition-child--1 {
+  top: 0;
+}
+
+
+.transition-child--2 {
+  top: 100px;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.transition-child--3 {
+  top: 200px;
+}
+
+.transition-child--4 {
+  top: 300px;
+}
+
 /*
   transition-property: all || margin || width || left || background-color || etc etc - CSS proprietati pe care vrem sa aplicam tranzitia lentă?
   transition-duration: <timp> - in secunde sau millisecunde, cat timp dureaza tranzitia

@@ -1,16 +1,38 @@
 @keyframes sasha {
   0% {
     left: 0;
+    top: 0;
     background-color: green;
   }
-  50% {
-    top: 20px;
+  10% {
+    left: calc(100% - 50px);
+    top: 0;
     background-color: blue;
   }
-  100% {
+  15% {
     left: calc(100% - 50px);
-    background-color: orange;
+    top: 100px;
+    background-color: blue;
   }
+
+  20% {
+    left: 0;
+    top: 100px;
+  }
+  25% {
+    left: 0;
+    top: 200px;
+  }
+
+  30% {
+    left: calc(100% - 50px);
+    top: 200px;
+  }
+  35% {
+    left: calc(100% - 50px);
+    top: 300px;
+  }
+  
 }
 
 .animation-area {
@@ -39,13 +61,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;  
-  animation-fill-mode: none;
-  animation-play-state: paused;
-  animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  
 }
 
 
