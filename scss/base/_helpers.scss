@@ -1,0 +1,15 @@
+.visually-hidden {
+  clip: rect(0 0 0 0); 
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in;
+}
