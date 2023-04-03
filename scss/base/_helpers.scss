@@ -13,3 +13,47 @@
   box-sizing: border-box;
   transition: all 0.2s ease-in;
 }
+
+@function coef-to-percentage($coef) {
+  @return $coef * 100%;
+}
+
+@function urlImage($file) {
+  @return $images_path + $file;
+}
+
+@function urlFont($file) {
+  @return $fonts_path + $file;
+}
+
+$font-weights: (
+  "thin": 100,
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700
+);
+
+@each $weight, $number in $font-weights {
+  .weight-helper--#{$weight} {
+    font-weight: $number;
+  }
+}
+
+
+$brand-colors: (
+  "primary": #fff,
+  "secondary": #000,
+  "tertiary": #f00
+);
+
+
+@each $name, $color in $brand-colors {
+  .color--#{$name} {
+    color: $color;
+  }
+
+  .background-color--#{$name} {
+    color: $color;
+  }
+}

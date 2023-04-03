@@ -13,3 +13,28 @@
 @import 'components/transition';
 @import 'components/animation';
 @import 'components/forms'; 
+
+.block {
+  font-size: 20px;
+
+  &__header {
+    padding: 10px;
+
+    &__title {
+      margin: auto;
+    }
+  }
+}
+
+
+/*
+.block {
+  font-size: 1.25rem;
+}
+.block__header {
+  padding: 10px;
+}
+.block__header__title {
+  margin: auto;
+}
+*/

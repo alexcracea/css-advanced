@@ -5,14 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styleguide.css">
 </head>
-<body>
+<body class="theme--light">
   <header class="header">
+  <ul>
+    <li><a href="#" class="js-change-resolution" data-resolution="350px">Mobile</a></li>   
+    <li><a href="#" class="js-change-resolution" data-resolution="800px">Tablet</a></li>
+    <li><a href="#" class="js-change-resolution" data-resolution="1300px">Desktop</a></li>
+    <li><a href="#" class="js-change-resolution" data-resolution="100%">Desktop Wide</a></li>
+  </ul>
   </header>
   <main class="main-content">
-    <aside class="sidebar">
+    <aside class="sidebar js-sidebar">
       <ul>
         <li><a href="#filters">Filters</a></li>
         <li><a href="#gradients">Gradients</a></li>
@@ -23,200 +28,9 @@
       </ul>
     </aside>
     <content class="content-area">
-      <div class="section" id="forms">
-        <div class="container">
-          <h2 class="section__content">Forms</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <h3>Pure-CSS Dropdown</h3>
-            <input type="checkbox" class="dropdown-input visually-hidden" id="dropdown-input-example">
-            <label for="dropdown-input-example" class="dropdown-button">Toggle dropdown</label>
-            <div class="dropdown-content">
-              <ul>
-                <li>First</li>
-                <li>Second</li>
-                <li>Third</li>
-              </ul>
-            </div>
-
-
-            <h3>CSS Radio Cards layout</h3>
-            <div class="cards">
-              <input type="radio" name="cards-radio" value="card-value-1" id="card-value-1" class="cards__input--1 visually-hidden" checked>
-              <input type="radio" name="cards-radio" value="card-value-2" id="card-value-2" class="cards__input--2 visually-hidden">
-              <input type="radio" name="cards-radio" value="card-value-3" id="card-value-3" class="cards__input--3 visually-hidden">
-              <input type="radio" name="cards-radio" value="card-value-4" id="card-value-4" class="cards__input--4 visually-hidden">
-
-              <label class="cards__button cards__button--1" for="card-value-1">Card Button 1</label>
-              <label class="cards__button cards__button--2" for="card-value-2">Card Button 2</label>
-              <label class="cards__button cards__button--3" for="card-value-3">Card Button 3</label>
-              <label class="cards__button cards__button--4" for="card-value-4">Card Button 4</label>
-            </div>
-
-            <h3>Custom Checkbox Style</h3>
-            <label class="checkbox" for="custom-checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="custom-checkbox">
-              <div class="checkbox__box">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                  <path d="M3.556 14.222l-3.556 3.556 10.667 10.667 21.333-21.333-3.556-3.556-17.778 17.778-7.111-7.111z"></path>
-                </svg>
-              </div>
-              <span class="checkbox__label">
-                Checkbox with custom style
-              </span>
-            </label>
-
-
-            <h3>Simple select</h3>
-            <div class="simple-select">
-              <select>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
-                <path d="M12.939 23.842l-12.146-12.146c-0.586-0.586-0.586-1.536 0-2.121l1.417-1.417c0.585-0.585 1.533-0.586 2.119-0.002l9.672 9.626 9.672-9.626c0.586-0.583 1.534-0.582 2.119 0.002l1.417 1.417c0.586 0.586 0.586 1.536 0 2.121l-12.146 12.146c-0.586 0.586-1.536 0.586-2.121 0z"></path>
-              </svg>
-            </div>
-
-            <h3>Advanced select</h3>
-            <select class="advanced-select" name="advanced-select" id="advanced-select">
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="transition">
-        <div class="container">
-          <h2 class="section__content">Transition (hover to apply)</h2>
-        </div>
-        <div class="section__content">
-          <div class="transition-area">
-            <div class="transition-child transition-child--1"></div>
-            <div class="transition-child transition-child--2"></div>
-            <div class="transition-child transition-child--3"></div>
-            <div class="transition-child transition-child--4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="animation">
-        <div class="container">
-          <h2 class="section__content">Animation (hover to apply)</h2>
-        </div>
-        <div class="section__content">
-          <div class="animation-area">
-            <div class="animation-child"></div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="transform">
-        <div class="container">
-          <h2 class="section__content">Transform (hover boxes to apply)</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 transform-action-area transform-action-area--1">
-                <div class="transform-element">
-                  Transform scale()
-                </div>
-              </div>
-              <div class="col-4 transform-action-area transform-action-area--2">
-                <div class="transform-element">
-                  Transform transalate()
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="responsive-image">
-        <div class="container">
-          <h2 class="section__content">Responsive Image</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <div class="ratio-box">
-                  <img
-                    src="http://unsplash.it/1200/1200"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="gradients">
-        <div class="container">
-          <h2 class="section__content">Gradients</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <div class="gradient-box gradient-box--1 ratio-box--16-9"></div>
-              </div>
-              <div class="col-3">
-                <div class="gradient-box gradient-box--2"></div>
-              </div>
-              <div class="col-3">
-                <div class="gradient-box gradient-box--3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="filters">
-        <div class="container">
-          <h2 class="section__content">Filters</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <div class="row">
-              <div class="col-4">
-                <div class="filter-box filter-box--blur">
-                  <img src="images/filter.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-              <div class="filter-box ratio-box--16-9 filter-box--grayscale">
-                <img src="images/filter.jpg" alt="">
-              </div>
-              </div>
-              <div class="col-4">
-                <div class="filter-box filter-box--brightness">
-                  <img src="images/filter.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="filter-box filter-box--contrast">
-                  <img src="images/filter.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="filter-box filter-box--hue-rotate">
-                  <img src="images/filter.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="filter-box filter-box--drop-shadow">
-                  <img src="images/filter.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <iframe src="styleguide.html" frameborder="0" class="main-iframe js-main-iframe"></iframe>
     </content>
   </main>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/select2/dist/js/select2.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/styleguide.js"></script>
 </body>
 </html>
